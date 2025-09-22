@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Example page with most HTML tags" />
+    <title>HTML Tags Example</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+      }
+      section {
+        border: 1px solid #ccc;
+        padding: 10px;
+        margin-bottom: 20px;
+      }
+      table,
+      th,
+      td {
+        border: 1px solid black;
+        border-collapse: collapse;
+        padding: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>HTML Tags Demo Page</h1>
+      <nav>
+        <ul>
+          <li><a href="#text">Text Tags</a></li>
+          <li><a href="#media">Media Tags</a></li>
+          <li><a href="#forms">Form Tags</a></li>
+          <li><a href="#table">Table Tags</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="text">
+      <h2>Text Formatting Tags</h2>
+      <p>This is a <b>bold</b> text and <strong>strong</strong> text.</p>
+      <p>This is <i>italic</i> and <em>emphasized</em> text.</p>
+      <p><small>Small text</small> and <mark>highlighted text</mark>.</p>
+      <p><del>Deleted text</del> and <ins>Inserted text</ins>.</p>
+      <p>Subscript: H<sub>2</sub>O, Superscript: X<sup>2</sup></p>
+      <p>Abbreviation: <abbr title="Hypertext Markup Language">HTML</abbr></p>
+      <p>Citation: <cite>Shakespeare</cite></p>
+      <code>console.log('Hello World');</code>
+      <pre>
+function test() {
+    return true;
+}
+        </pre
+      >
+      <q>This is a short inline quote.</q>
+      <hr />
+    </section>
+
+    <section id="media">
+      <h2>Media Tags</h2>
+
+      <!-- Images -->
+      <img src="https://picsum.photos/200" alt="Placeholder Image" />
+      <figure>
+        <img src="https://picsum.photos/150" alt="Figure Image" />
+        <figcaption>Figure Caption</figcaption>
+      </figure>
+
+      <!-- Audio -->
+      <audio controls>
+        <source
+          src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
+          type="audio/mpeg"
+        />
+        Your browser does not support the audio element.
+      </audio>
+
+      <!-- Video -->
+      <video width="320" height="240" controls>
+        <source
+          src="https://www.w3schools.com/html/mov_bbb.mp4"
+          type="video/mp4"
+        />
+        Your browser does not support the video tag.
+      </video>
+    </section>
+
+    <section id="forms">
+      <h2>Form Tags</h2>
+      <h1>All Form and File Input HTML Tags Demo</h1>
+
+      <form action="#" method="post" enctype="multipart/form-data">
+        <fieldset>
+          <legend>Text Inputs</legend>
+          <label for="text">Text:</label>
+          <input type="text" id="text" name="text" /><br />
+
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" /><br />
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" /><br />
+
+          <label for="number">Number:</label>
+          <input
+            type="number"
+            id="number"
+            name="number"
+            min="0"
+            max="100"
+          /><br />
+
+          <label for="tel">Telephone:</label>
+          <input type="tel" id="tel" name="tel" /><br />
+
+          <label for="url">URL:</label>
+          <input type="url" id="url" name="url" /><br />
+
+          <label for="search">Search:</label>
+          <input type="search" id="search" name="search" /><br />
+
+          <label for="date">Date:</label>
+          <input type="date" id="date" name="date" /><br />
+
+          <label for="color">Color:</label>
+          <input type="color" id="color" name="color" /><br />
+        </fieldset>
+
+        <fieldset>
+          <legend>File Input</legend>
+          <label for="file">Upload a file:</label>
+          <input type="file" id="file" name="file" /><br />
+          <label for="files">Upload multiple files:</label>
+          <input type="file" id="files" name="files" multiple /><br />
+          <output id="fileList"></output>
+        </fieldset>
+
+        <fieldset>
+          <legend>Selection Inputs</legend>
+          <label>Radio Buttons:</label>
+          <input type="radio" name="gender" value="male" id="male" /><label
+            for="male"
+            >Male</label
+          >
+          <input type="radio" name="gender" value="female" id="female" /><label
+            for="female"
+            >Female</label
+          ><br />
+
+          <label>Checkboxes:</label>
+          <input type="checkbox" name="vehicle" value="Bike" id="bike" /><label
+            for="bike"
+            >Bike</label
+          >
+          <input type="checkbox" name="vehicle" value="Car" id="car" /><label
+            for="car"
+            >Car</label
+          ><br />
+
+          <label for="select">Select:</label>
+          <select id="select" name="select">
+            <option value="option1">Option 1</option>
+            <option value="option2">Option 2</option>
+            <option value="option3">Option 3</option></select
+          ><br />
+
+          <label for="optgroup">Select with optgroup:</label>
+          <select id="optgroup" name="optgroup">
+            <optgroup label="Group 1">
+              <option value="g1o1">G1 Option 1</option>
+              <option value="g1o2">G1 Option 2</option>
+            </optgroup>
+            <optgroup label="Group 2">
+              <option value="g2o1">G2 Option 1</option>
+            </optgroup></select
+          ><br />
+
+          <label for="datalist">Datalist Input:</label>
+          <input list="browsers" id="datalist" name="datalist" />
+          <datalist id="browsers">
+            <option value="Chrome"></option>
+            <option value="Firefox"></option>
+            <option value="Safari"></option>
+            <option value="Edge"></option>
+          </datalist>
+        </fieldset>
+
+        <fieldset>
+          <legend>Textarea and Buttons</legend>
+          <label for="textarea">Textarea:</label>
+          <textarea id="textarea" name="textarea" rows="4" cols="40"></textarea
+          ><br />
+
+          <button type="submit">Submit</button>
+          <button type="reset">Reset</button>
+          <button type="button" onclick="alert('Button clicked')">
+            Click Me
+          </button>
+        </fieldset>
+
+        <input type="hidden" name="hidden" value="hiddenValue" />
+        <input type="range" name="range" min="0" max="100" value="50" />
+      </form>
+    </section>
+
+    <section id="table">
+      <h2>Table Tags</h2>
+      <table>
+        <caption>
+          Sample Table
+        </caption>
+        <thead>
+          <tr>
+            <th>Header 1</th>
+            <th>Header 2</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Row 1, Cell 1</td>
+            <td>Row 1, Cell 2</td>
+          </tr>
+          <tr>
+            <td>Row 2, Cell 1</td>
+            <td>Row 2, Cell 2</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td>Footer 1</td>
+            <td>Footer 2</td>
+          </tr>
+        </tfoot>
+      </table>
+    </section>
+
+    <footer>
+      <p>HTML Demo Page</p>
+    </footer>
+  </body>
+</html>
